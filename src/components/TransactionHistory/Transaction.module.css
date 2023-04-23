@@ -1,0 +1,25 @@
+.table {
+  border: 1px solid #808080;
+  background-color: #EEEEEE;
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto 30px;
+}
+
+.table_head {
+  color: #ffffff;
+  background-color: #a9a9a9;
+}
+
+.table_row {
+  border: 1px solid #808080;
+}
+
+.table_row:nth-child(eath) {
+  background-color: #a9a9a9;
+}
+
+.table_sell {
+  border: 1px solid #808080;
+  padding: 0 10px;
+}

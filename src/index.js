@@ -4,9 +4,11 @@ import './index.css';
 import user from './incoming-data/user.json';
 import data from './incoming-data/data';
 import friends from './incoming-data/friends';
+import transactions from './incoming-data/transactions';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
-import { FriendList } from 'components/FriendList/FriendList'
+import { FriendList } from 'components/FriendList/FriendList';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,7 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     />
     <Statistics title="Upload stats" stats={data} />
     <Statistics stats={data} />
-    <FriendList friends={friends}/>
+    <FriendList friends={friends} />
+    <TransactionHistory items={transactions} />
   </React.StrictMode>
 );
 
